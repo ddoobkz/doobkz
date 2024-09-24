@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doob.kz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/168ebc7feb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Small Devices  -->
+    <header
+  class="h-[60vh] w-full bg-[url('img/interior-room-with-white-sofa-floor-lamp-front-light-green-background_825692-14983.jpg')] bg-no-repeat bg-cover md:hidden lg:hidden"
+>
+  <!-- Navigation Bar -->
+  <nav
+    class="bg-gradient-to-r from-green-700 to-transparent sticky py-4 px-6 flex justify-between items-center shadow-lg backdrop-blur-md z-50"
+  >
+    <div>
+      <p class="font-Inter font-bold text-lg text-white ">doob.kz</p>
+      <!-- <p class="font-Ubuntu text-xs lg:text-sm font-normal text-slate-200 tracking-wide">
+        We care for your homes<br> inner beauty
+      </p> -->
+    </div>
+    <div>
+      <ul class="flex gap-6 text-white font-sans">
+        <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-sm lg:text-base" href="#about">About Us</a>
+        </li>
+        <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-sm lg:text-base" href="#service">Catalog</a>
+        </li>
+        <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-sm lg:text-base" href="#review">Reviews</a>
+        </li>
+        <!-- <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-sm lg:text-base" href="#call">Contact</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <button id="languageToggle" class="button">
+      Switch to Russian
+    </button>
+  </div>
+
+
+  <!-- Hero Section -->
+  <div id="top" class="absolute top-36 lg:top-[30rem] left-16 lg:left-[29em] z-10">
+    <div class="flex flex-col">
+      <p class="text-3xl lg:text-6xl text-white font-bold leading-tight">
+        A Better Life Starts with a <br />
+        Beautiful Furniture
+      </p>
+    </div>
+    <div class="mt-12">
+      <a
+        href="#call"
+        class="text-white bg-green-600 hover:bg-green-500 px-8 py-3 inline-block text-sm font-medium tracking-wide focus:ring-4 focus:ring-green-300 transition"
+      >
+      <i class="fa fa-whatsapp mr-2" aria-hidden="true" ></i>
+        Contact
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <!-- For large devices -->
+<header
+  class="hidden md:block lg:block h-[130vh] w-full bg-[url('img/interior-room-with-white-sofa-floor-lamp-front-light-green-background_825692-14983.jpg')] bg-no-repeat bg-cover"
+>
+  <!-- Navigation Bar -->
+  <nav
+    class="bg-gradient-to-r from-green-700 to-transparent fixed top-0 py-4 w-full px-16 flex justify-between items-center shadow-lg backdrop-blur-md z-50"
+  >
+    <a href="#">
+      <div>
+        <p class="font-Inter font-bold text-2xl text-white">doob.kz</p>
+        <p class="font-Ubuntu text-xs font-normal text-slate-200">
+          We care for your homes<br> inner beauty
+        </p>
+      </div>
+    </a>
+    <div class="flex items-center">
+      <ul class="flex text-white font-sans gap-8">
+        <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-base" href="#about">About Us</a>
+        </li>
+        <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-base" href="#services">Catalog</a>
+        </li>
+        <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-base" href="#reviews">Reviews</a>
+        </li>
+        <!-- <li class="hover:text-slate-200 transition duration-300">
+          <a class="text-base" href="#call">Contact</a>
+        </li> -->
+      </ul>
+      <button
+        type="button"
+        class="ml-8 text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-6 py-3 transition duration-300"
+      >
+        <!-- <i class="fa-solid fa-whatsapp mr-2" aria-hidden="true"></i> -->
+        <!-- <i class="fa fa-whatsapp mr-2" aria-hidden="true" ></i> -->
+        <a class="fa fa-whatsapp mr-3" aria-hidden="true"  href="#call"> Contact</a>
+      </button>
+    </div>
+  </nav>
+  <button id="languageTogglle" class="fixed bottom-20 right-4 bg-green-300 text-white px-4 py-2 rounded text-lg hover:bg-green-700 transition z-50">
+    Switch to Russian
+  </button>
+  
+
+  <!-- Hero Section -->
+  <div id="home" class="relative h-full flex items-center justify-center bg-gradient-to-t from-black via-transparent to-transparent">
+  <div class="text-center z-10 max-w-3xl">
+    <!-- Heading -->
+    <p class="text-4xl lg:text-6xl font-extrabold text-white mb-8 leading-tight tracking-tight">
+      A Better Life Starts with a <br />
+        Beautiful Furniture
+    </p>
+    
+    <!-- Call to Action Button -->
+    <a
+      href="#contact"
+      class="inline-flex items-center justify-center text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:from-green-600 hover:via-green-700 hover:to-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-semibold rounded-lg text-lg px-8 py-4 transition-transform transform hover:scale-105 duration-300"
+    >
+      <svg class="w-9 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      <!-- <i class="fa fa-whatsapp mr-2" aria-hidden="true" ></i> -->
+      Order
+    </a>
+  </div>
+</div>
+
+
+</header>
+
+    <main>
+      <div id="about" class="about-section my-6 mx-4 lg:my-10 lg:mx-24">
+        <div>
+          <!-- Left Section  -->
+          <div class="lg:w-[45%]">
+  <h1 class="text-3xl lg:text-5xl font-Ubuntu font-serif mb-4 lg:mb-6 text-gray-800">
+    Welcome to Doob.kz<br /> Your Destination for Quality Furniture
+  </h1>
+  <p class="text-base lg:text-lg text-gray-600">
+    At Doob.kz, we are dedicated to transforming your living spaces with stylish, comfortable, and durable furniture. Whether you're looking for modern, minimalist designs or timeless classics, we have a wide range of furniture to suit every taste and need. From cozy sofas and elegant dining sets to functional office furniture and storage solutions, Doob.kz provides premium furniture that combines aesthetic appeal with practicality.
+  </p>
+</div>
+
+<div class="lg:flex lg:justify-between lg:space-x-12">
+  <div class="lg:w-[40%] lg:my-12 space-y-8 px-5">
+    <div class="flex items-start space-x-4">
+      <div class="text-[#22c55e] text-2xl">
+        <i class="fa-solid fa-couch"></i>
+      </div>
+      <div>
+        <h5 class="text-lg lg:text-xl font-semibold text-gray-800">Friendly Furniture Store Near You</h5>
+        <p class="text-sm lg:text-base text-gray-600">We are dedicated to enhancing your home’s beauty. Visit our store and leave with furniture that transforms your space.</p>
+      </div>
+    </div>
+
+    <div class="flex items-start space-x-4">
+      <div class="text-[#22c55e] text-2xl">
+        <i class="fa-solid fa-chair"></i>
+      </div>
+      <div>
+        <h5 class="text-lg lg:text-xl font-semibold text-gray-800">Modern Designs</h5>
+        <p class="text-sm lg:text-base text-gray-600">Experience clean, modern furniture crafted with the finest materials. We offer stylish and comfortable pieces for all your home decor needs.</p>
+      </div>
+    </div>
+
+    <div class="flex items-center text-[#22c55e] cursor-pointer text-sm space-x-2">
+      <i class="fa-solid fa-location-dot"></i>
+      <a href="#" class="font-semibold">View on Google Map</a>
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="hidden lg:flex lg:w-[50%] lg:items-end lg:justify-end relative space-x-4">
+    <img class="lg:relative w-44 lg:w-56 lg:left-52 lg:bottom-24 lg:z-30" src="img/81UxiD1Mm9L.jpg" alt="HappySmile">
+    <img class="lg:w-52 h-32 lg:relative lg:bottom-7" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/dotsx2.png" alt="HappySmile">
+    <img class="relative lg:top-5 lg:right-24 w-36 lg:w-52 lg:z-20" src="img/dining-sets-19145.avif" alt="HappySmile">
+  </div>
+
+  <div class="w-3/4 m-auto lg:hidden p-4">
+    <img class="my-8" src="img/RCH001_7_Supersize.avif" alt="HappySmile">
+    
+  </div>
+</div>
+
+<!-- Our Department -->
+<!-- <div class="flex flex-col justify-center items-center my-12 px-4 lg:px-8">
+  <h2 class="text-3xl lg:text-5xl font-extrabold text-center text-gray-900 mb-8">
+    Our manufacturing facility
+  </h2>
+  <a href="https://www.youtube.com/watch?v=3A_ciKe0o5A" target="_blank" class="relative w-full lg:w-[70%] aspect-w-4 aspect-h-3">
+    <iframe class="w-full h-full rounded-xl shadow-xl" 
+    src="https://www.youtube.com/embed/3A_ciKe0o5A"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-20 rounded-xl"></div>
+  </a>
+</div> -->
+
+
+
+<!-- <div class="flex flex-col justify-center items-center my-12 px-4 lg:px-8">
+  <h2 class="text-3xl lg:text-5xl font-extrabold text-center text-gray-900 mb-8">
+    Our Manufacturing Facility
+  </h2>
+  <div class="relative w-full lg:w-[70%] aspect-w-16 aspect-h-9">
+    <iframe 
+      class="w-full h-full rounded-xl shadow-xl"
+      src="https://www.youtube.com/embed/3A_ciKe0o5A?autoplay=1&mute=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      title="Our Manufacturing Facility Video">
+    </iframe>
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-20 rounded-xl"></div>
+  </div>
+</div> -->
+
+<div class="flex flex-col justify-center items-center my-12 px-4 lg:px-8">
+  <h2 class="text-3xl lg:text-5xl font-extrabold text-center text-gray-900 mb-8">
+    Our Manufacturing Facility
+  </h2>
+  <div class="relative w-full lg:w-[80%] aspect-w-16 aspect-h-9 h-[250px] lg:h-[400px]">
+    <iframe 
+      class="w-full h-full rounded-xl shadow-xl"
+      src="https://www.youtube.com/embed/3A_ciKe0o5A?autoplay=1&mute=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      title="Our Manufacturing Facility Video">
+    </iframe>
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-20 rounded-xl"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- About The Doctor  -->
+          <div class="lg:flex lg:justify-between">
+            <div class="hidden lg:flex my-10 w-1/2">
+              <img class="z-30 w-70 h-60" src="img/IMG_1109.jpg" alt="HappySmile">
+              <img class="w-44 h-40 relative right-10" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/dotsx2.png" alt="HappySmile">
+              <img class="z-20 relative right-60 top-44 w-50 h-60" src="img/IMG_7527.PNG" alt="HappySmile">
+            </div>
+
+            <div class="flex flex-col justify-start lg:w-[40%] lg:my-12 gap-y-6 px-4">
+              <h3 class="text-2xl font-bold">Committed To Peoples interior</h3>
+              <h3 class="hidden text-4xl font-bold">Committed To Dental <br> Excellence</h3>
+              <h4 class="text-xl font-semibold text-slate-700">We Create Beautiful and Brighter Smiles</h4>
+              <p class="w-[90%] text-slate-600 text-sm font-medium"> Our mission is simple: to offer high-quality, affordable furniture that enhances the beauty and functionality of your home or office. At Doob.kz, we believe that great design should be accessible to everyone, and we strive to bring you the best in craftsmanship and style. Explore our collection today and discover the perfect pieces to elevate your space.</p>
+              <div class="my-8">
+                <h5 class="text-lg font-semibold">Mr Abshukur Amanbek</h5>
+                <p class="text-sm text-slate-600 italic w-[90%]">Mr Amanbek is involved in every aspect of the company—from sourcing materials to overseeing production and ensuring excellent customer service. His dedication to innovation and customer satisfaction positions him as a forward-thinking leader in the furniture industry, continually adapting to trends and market demands.</p>
+              </div>
+            </div>
+            <div class="m-auto w-52 lg:hidden">
+              <img src="img/IMG_7527.PNG" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section  -->
+      <section id="contact">
+        <div class="w-full lg:w-[85%] bg-gradient-to-r from-green-500 to-green-700 lg:flex lg:justify-between lg:mt-10 py-12">
+          <div class="lg:ml-24 py-10 lg:py-20 w-full lg:w-[50%] flex flex-col lg:items-start items-center place-content-start">
+            <h3 class="text-3xl lg:text-3xl font-serif text-white font-bold">New Customer</h3>
+            <p class="text-lg lg:text-xl font-semibold w-[70%] my-4 text-slate-200">Are you a new customer?  Don't worry we're here to help you with your choices. Fill the form that given beside or just give a call.
+            </p>
+            <p class="text-xl lg:text-2xl text-white font-bold mt-4 lg:mt-10">NEED ASSISTANCE?</p>
+            <p class="text-sm lg:text-xl text-white font-semibold cursor-pointer hover:underline my-4">+7 775 824 51 75</p>
+          </div>
+
+          <div class="lg:w-[50%] px-2 lg:py-20 lg:z-30">
+            <div class="px-2 py-8 flex flex-col lg:w-1/2 justify-center items-center bg-white rounded-xl shadow-2xl lg:relative lg:left-[26rem]">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" placeholder="Your Name">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="email" name="" id="" placeholder="Your Email">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" name="" id="" placeholder="Your Phone Number">
+              <button class="py-2 px-6 border border-green-500 rounded-md text-sm text-green-500 font-semibold my-3 hover:bg-green-500 hover:text-white hover:border-none">Submit</button>
+            </div>
+          </div>
+          <img class="hidden lg:block absolute right-12" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/dotsx2.png" alt="">
+        </div>
+      </section>
+
+      <!-- Featured Section  -->
+      <section class="bg-green-100 py-12 px-24">
+        <h2 class="text-2xl lg:text-4xl font-bold text-center my-2 lg:my-3">We take pride in offering more than just furniture — we deliver a complete experience.</h2>
+        <h4 class="text-lg lg:text-xl font-semibold text-center my-2 lg:my-3">Bringing Life to Your Home</h4>
+        <!-- Featured Card  -->
+        <div class="flex flex-col md:flex-row lg:flex-row justify-center gap-y-6 lg:gap-x-10 my-14">
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-green-600"><i class="fa-solid fa-star fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Exceptional Quality Craftsmanship​</h6>
+              <p class="text-sm lg:text-base text-center">Our furniture features superior craftsmanship and premium materials for lasting beauty and durability.</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-green-600"><i class="fa-solid fa-cog fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Customizable Designs​​</h6>
+              <p class="text-sm lg:text-base text-center">Tailor every piece to your style with our wide range of customization options.</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-green-600"><i class="fa-solid fa-leaf fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Eco-Friendly Practices</h6>
+              <p class="text-sm lg:text-base text-center">Enjoy beautiful furniture made with sustainable materials and processes.</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-green-600"><i class="fa-solid fa-users fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Outstanding Customer Service​</h6>
+              <p class="text-sm lg:text-base text-center">Experience seamless support from design to delivery with our dedicated team.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Images Row  -->
+      <!-- For Small Devices -->
+      <section id="service" class=" mx-4 pt-8 flex flex-col justify-center items-center m-auto  lg:hidden">
+
+          <div class="flex flex-col px-4 my-3">
+            <h2 class="text-xl font-bold my-1">Various Catalogs That We Offered</h2>
+            <p class="text-slate-500 font-semibold">
+              We have everything you need to transform your home’s interior, from stunning furniture and stylish decor to custom solutions and seasonal highlights.
+            </p>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="relative h-[15rem] bg-[url('img/A-collection-of-vintage-books-thoughtfully-arranged-on-the-side-tables-bestows-upon-the-modern-living-room-a-touch-of-bygone-British-charm.jpg')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-lg font-semibold">1.</p>
+                <p class="text-base font-semibold">Furniture Collection Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A modern, elegantly arranged living space with neutral tones and accent pieces.</p>
+              </div>
+            </div>
+
+            <div class="relative h-[15rem] bg-[url('img/ghk070123homeminifeature-007-660d85545cc73.avif')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-lg font-semibold">2.</p>
+                <p class="text-base font-semibold">Home Decor Essentials Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A close-up of a beautifully set dining table with decorative placemats, candles, and a centerpiece.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="relative h-[15rem] bg-[url('img/Cozy-Christmas-Decorating-Ideas-21.jpg')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-base font-semibold">3.</p>
+                <p class="text-base font-semibold">Seasonal Living Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A warm, inviting space decorated for winter with cozy throws, festive lights, and seasonal accents.</p>
+              </div>
+            </div>
+
+            <div class="relative h-[15rem] bg-[url('img/aace7ce7-7eba-408b-a0ef-8327c52cee03.avif')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-lg font-semibold">4.</p>
+                <p class="text-base font-semibold">Custom Design Options Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A designer’s desk with a selection of fabrics and materials alongside a partially completed piece of furniture.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="relative h-[15rem] bg-[url('img/v2-dqhw3-3uj9o.jpg')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-lg font-semibold">5.</p>
+                <p class="text-base font-semibold">New Arrivals Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">An eye-catching display of the latest products arranged in a fresh, contemporary setting.</p>
+              </div>
+            </div>
+
+            <div class="relative h-[15rem] bg-[url('img/AD_5.17_16-Best-Memorial-Day-Furniture-Sales-and-Home-Deals.webp')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-lg font-semibold">6.</p>
+                <p class="text-base font-semibold">Outlet Specials Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A vibrant store display with “SALE” signage and prominently featured discounted items.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="relative h-[15rem] bg-[url('img/DALL_E_2024-02-08_14.46.55_-_A_luxurious_living_room_scene_blending_modern_and_classic_furniture_styles._The_centerpiece_is_a_statement_sofa_with_a_unique_eye-catching_design_po.webp')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-lg font-semibold">7.</p>
+                <p class="text-base font-semibold">Luxury Collection Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A sophisticated interior showcasing opulent furniture and decor with a focus on luxury and refinement.</p>
+              </div>
+            </div>
+
+            <div class="h-[15rem] bg-[url('img/choose-high-quality-sustainable-materials_600x600.webp')] bg-no-repeat bg-cover relative">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-48 z-10">
+                <p class="text-lg font-semibold">8.</p>
+                <p class="text-base font-semibold">Eco-Friendly Options Catalog​</p>
+                <p class="text-slate-100 my-4 text-xs">A green, nature-inspired space with items made from recycled or sustainably sourced materials, perhaps featuring plants and natural light.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 py-8 bg-green-500 w-full flex flex-col justify-center my-6">
+            <p class="text-slate-100 text-sm font-bold">
+              FOR ANY QUERY
+            </p>
+            <h2 class="text-lg font-bold text-white">Call us : +7 775 824 51 75 / +1 (973) 417-6766</h2>
+          </div>
+
+      </section>
+
+      <!-- For Large devices  -->
+      <section id="services" class="hidden lg:flex py-12 px-24 lg:flex  flex-col justify-center items-center w-[80%] m-auto ">
+        <!-- Images Row 1  -->
+        <div class="flex m-auto">
+          <div class="w-[50%] flex flex-col px-8 content-end">
+            <h2 class="text-3xl font-bold my-4 ">Various Catalogs That We Offered</h2>
+            <p class="text-slate-500 text-lg font-bold">
+              We have everything you need to transform your home’s interior, from stunning furniture and stylish decor to custom solutions and seasonal highlights.
+            </p>
+          </div>
+
+          <div class="w-1/2 flex">
+            <!-- <div class=" h-[17rem] bg-[url('img/Living with Lolo Photo Credit_ Life Created 4.webp')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">1.</p>
+                <p class="text-base font-semibold">Furniture Collection Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A modern, elegantly arranged living space with neutral tones and accent pieces.</p>
+              </div>
+            </div> -->
+            <div class="relative h-[17rem] bg-[url('img/A-collection-of-vintage-books-thoughtfully-arranged-on-the-side-tables-bestows-upon-the-modern-living-room-a-touch-of-bygone-British-charm.jpg')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-60 z-10">
+                <p class="text-lg font-semibold">1.</p>
+                <p class="text-base font-semibold">Furniture Collection Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A modern, elegantly arranged living space with neutral tones and accent pieces.</p>
+              </div>
+            </div>
+            
+
+            <!-- <div class=" h-[17rem] bg-[url('img/ghk070123homeminifeature-007-660d85545cc73.avif')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">2.</p>
+                <p class="text-base font-semibold">Home Decor Essentials Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A close-up of a beautifully set dining table with decorative placemats, candles, and a centerpiece.</p>
+              </div>
+            </div> -->
+            <div class="relative h-[17rem] bg-[url('img/ghk070123homeminifeature-007-660d85545cc73.avif')] bg-no-repeat bg-cover">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-60 z-10">
+                <p class="text-lg font-semibold">2.</p>
+                <p class="text-base font-semibold">Home Decor Essentials Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A close-up of a beautifully set dining table with decorative placemats, candles, and a centerpiece.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- Images Row 2  -->
+        <div class="flex">
+          <!-- <div class=" h-[17rem] bg-[url('img/Cozy-Christmas-Decorating-Ideas-21.jpg')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-base font-semibold">3.</p>
+              <p class="text-base font-semibold">Seasonal Living Catalog</p>
+              <p class="text-slate-100 my-4 text-xs">A warm, inviting space decorated for winter with cozy throws, festive lights, and seasonal accents.</p>
+            </div>
+          </div> -->
+          <div class="relative h-[17rem] bg-[url('img/Cozy-Christmas-Decorating-Ideas-21.jpg')] bg-no-repeat bg-cover">
+            <!-- Overlay for background color and text readability -->
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative text-white px-3 py-6 w-60 z-10">
+              <p class="text-base font-semibold">3.</p>
+              <p class="text-base font-semibold">Seasonal Living Catalog</p>
+              <p class="text-slate-100 my-4 text-xs">A warm, inviting space decorated for winter with cozy throws, festive lights, and seasonal accents.</p>
+            </div>
+          </div>
+          
+
+          <!-- <div class=" h-[17rem] bg-[url('img/ghk070123homeminifeature-007-660d85545cc73.avif')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-lg font-semibold">4.</p>
+              <p class="text-base font-semibold">Custom Design Options Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">A designer’s desk with a selection of fabrics and materials alongside a partially completed piece of furniture. </p>
+            </div>
+          </div> -->
+          <div class="relative h-[17rem] bg-[url('img/aace7ce7-7eba-408b-a0ef-8327c52cee03.avif')] bg-no-repeat bg-cover">
+            <!-- Overlay for background color and text readability -->
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative text-white px-3 py-6 w-60 z-10">
+              <p class="text-lg font-semibold">4.</p>
+              <p class="text-base font-semibold">Custom Design Options Catalog</p>
+              <p class="text-slate-100 my-4 text-xs">A designer’s desk with a selection of fabrics and materials alongside a partially completed piece of furniture.</p>
+            </div>
+          </div>
+          
+
+          <!-- <div class=" h-[17rem] bg-[url('img/v2-dqhw3-3uj9o.jpg')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-lg font-semibold">5.</p>
+              <p class="text-base font-semibold">New Arrivals Catalog</p>
+                <p class="text-slate-100 my-4 text-xs">An eye-catching display of the latest products arranged in a fresh, contemporary setting.</p>
+            </div>
+          </div> -->
+          <div class="relative h-[17rem] bg-[url('img/v2-dqhw3-3uj9o.jpg')] bg-no-repeat bg-cover">
+            <!-- Overlay for background color and text readability -->
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative text-white px-3 py-6 w-60 z-10">
+              <p class="text-lg font-semibold">5.</p>
+              <p class="text-base font-semibold">New Arrivals Catalog</p>
+              <p class="text-slate-100 my-4 text-xs">An eye-catching display of the latest products arranged in a fresh, contemporary setting.</p>
+            </div>
+          </div>
+          
+
+          <!-- <div class=" h-[17rem] bg-[url('img/AD_5.17_16-Best-Memorial-Day-Furniture-Sales-and-Home-Deals.webp')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-lg font-semibold">6.</p>
+              <p class="text-base font-semibold">Outlet Specials Catalog</p>
+                <p class="text-slate-100 my-4 text-xs"> A vibrant store display with “SALE” signage and prominently featured discounted items.</p>
+            </div>
+          </div> -->
+          <div class="relative h-[17rem] bg-[url('img/AD_5.17_16-Best-Memorial-Day-Furniture-Sales-and-Home-Deals.webp')] bg-no-repeat bg-cover">
+            <!-- Overlay for background color and text readability -->
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative text-white px-3 py-6 w-60 z-10">
+              <p class="text-lg font-semibold">6.</p>
+              <p class="text-base font-semibold">Outlet Specials Catalog</p>
+              <p class="text-slate-100 my-4 text-xs">A vibrant store display with “SALE” signage and prominently featured discounted items.</p>
+            </div>
+          </div>
+          
+        </div>
+          <!-- Images Row 3  -->
+        <div class="flex m-auto px-7">
+
+          <!-- <div class="flex">
+            <div class=" h-[17rem] bg-[url('img/DALL_E_2024-02-08_14.46.55_-_A_luxurious_living_room_scene_blending_modern_and_classic_furniture_styles._The_centerpiece_is_a_statement_sofa_with_a_unique_eye-catching_design_po.webp')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">7.</p>
+                <p class="text-base font-semibold">Luxury Collection Catalog</p>
+                <p class="text-slate-100 my-4 text-xs"> A sophisticated interior showcasing opulent furniture and decor with a focus on luxury and refinement.
+                </p>
+              </div>
+            </div> -->
+            <div class="flex">
+              <div class="relative h-[17rem] bg-[url('img/DALL_E_2024-02-08_14.46.55_-_A_luxurious_living_room_scene_blending_modern_and_classic_furniture_styles._The_centerpiece_is_a_statement_sofa_with_a_unique_eye-catching_design_po.webp')] bg-no-repeat bg-cover">
+                <!-- Overlay for background color and text readability -->
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="relative text-white px-3 py-6 w-60 z-10">
+                  <p class="text-lg font-semibold">7.</p>
+                  <p class="text-base font-semibold">Luxury Collection Catalog</p>
+                  <p class="text-slate-100 my-4 text-xs">A sophisticated interior showcasing opulent furniture and decor with a focus on luxury and refinement.</p>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- <div class=" h-[17rem] bg-[url('img/choose-high-quality-sustainable-materials_600x600.webp')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">8.</p>
+                <p class="text-base font-semibold">Eco-Friendly Options Catalog​</p>
+                <p class="text-slate-100 my-4 text-xs">A green, nature-inspired space with items made from recycled or sustainably sourced materials, perhaps featuring plants and natural light.</p>
+              </div>
+            </div> -->
+            <div class="h-[17rem] bg-[url('img/choose-high-quality-sustainable-materials_600x600.webp')] bg-no-repeat bg-cover relative">
+              <!-- Overlay for background color and text readability -->
+              <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div class="relative text-white px-3 py-6 w-60 z-10">
+                <p class="text-lg font-semibold">8.</p>
+                <p class="text-base font-semibold">Eco-Friendly Options Catalog​</p>
+                <p class="text-slate-100 my-4 text-xs">A green, nature-inspired space with items made from recycled or sustainably sourced materials, perhaps featuring plants and natural light.</p>
+              </div>
+            </div>
+            
+
+          <div class="w-[30rem] px-14 bg-green-800 flex flex-col justify-center rounded-br-full">
+            <p class="text-slate-100 text-sm font-bold">
+              FOR ANY QUERY
+            </p>
+            <h2 class="text-lg font-bold text-white">Call us : +7 775 824 51 75 / +1 (973) 417-6766</h2>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section  -->
+      <!-- For Small Devices  -->
+      <section id="review" class="w-full my-10 lg:hidden">
+        <h3 class="text-lg lg:text-3xl font-bold text-center py-2">You may like</h3>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4 ">
+          <img class="max-w-[45%] lg:w-full" src="img/sofa.jpg" alt="">
+          <img class="max-w-[45%] lg:w-full" src="img/diningTableSeet.webp" alt="">
+        </div>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-2 gap-x-4">
+          <img class="max-w-[45%] lg:w-full" src="img/ergonomic.jpg" alt="">
+          <img class="max-w-[45%] lg:w-full" src="img/bed.jpg" alt="">
+        </div>
+        <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">To see more products, visit our Instagram page 👉  <a class="underline hover:text-green-900" href="https://www.instagram.com/doob.kz/?hl=ru" target="_blank">Doob.kz Furniture</a></p>
+      </section>
+
+      <!-- For Large Devices  -->
+      <!-- <section id="reviews" class="w-full bg-green-100 my-10 hidden lg:block">
+        <h3 class="text-3xl font-bold text-center py-2">You may like</h3>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4 ">
+          <img class="max-w-[45%] lg:w-full" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/Testimonial_1.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/Testimonial_2.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/Testimonial_3.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/Testimonial_4.png" alt="">
+        </div>
+        <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">To see more testimonial visit our facebook page 👉 <a class="underline hover:text-green-900" href="#" target="_blank">Happy Smile Dental Clinic</a></p>
+      </section> -->
+      <section id="reviews" class="w-full my-10 hidden lg:block">
+        <h3 class="text-3xl font-bold text-center py-2">You May Like</h3>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4">
+          <!-- Product 1 -->
+          <div class="max-w-[45%] lg:w-full text-center">
+            <img class="w-full" src="img/sofa.jpg" alt="Product 1">
+            <p class="mt-2 font-semibold">Stylish Sofa</p>
+            <p class="text-sm text-gray-600">Comfortable and modern design.</p>
+          </div>
+      
+          <!-- Product 2 -->
+          <div class="max-w-[45%] lg:w-full text-center">
+            <img class="w-full" src="img/diningTableSeet.webp" alt="Product 2">
+            <p class="mt-2 font-semibold">Dining Table Set</p>
+            <p class="text-sm text-gray-600">Perfect for family meals.</p>
+          </div>
+      
+          <!-- Product 3 -->
+          <div class="max-w-[45%] lg:w-full text-center">
+            <img class="w-full" src="img/ergonomic.jpg" alt="Product 3">
+            <p class="mt-2 font-semibold">Ergonomic Chair</p>
+            <p class="text-sm text-gray-600">Ideal for home office setups.</p>
+          </div>
+      
+          <!-- Product 4 -->
+          <div class="max-w-[45%] lg:w-full text-center">
+            <img class="w-full" src="img/bed.jpg" alt="Product 4">
+            <p class="mt-2 font-semibold">Luxury Bed Frame</p>
+            <p class="text-sm text-gray-600">A touch of elegance for your bedroom.</p>
+          </div>
+        </div>
+      
+        <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">
+          To see more products, visit our Instagram page 👉 
+          <a class="underline hover:text-green-900" href="https://www.instagram.com/doob.kz/?hl=ru" target="_blank">Doob.kz Furniture</a>
+        </p>
+      </section>
+      
+
+      <!-- Feedback Section  -->
+      <section class="bg-white py-8">
+        <!-- Feedback Boxes  -->
+        <!-- Small Devices  -->
+        <div class="w-[80%] m-auto p-4 lg:hidden lg:justify-evenly">
+          <div class="w-60 h-60">
+            <h3 class="text-2xl font-bold text-center my-3">Happy Stories</h3>
+            <p class="text-sm text-center my-3">Creating Vibrant Vibes for Beautiful home!</p>
+            <img class="w-40 m-auto" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/happy.jpg" alt="">
+          </div>
+
+          <div class="flex flex-col gap-y-4">
+            <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">Doob KZ has a fantastic selection of modern, chic furniture that fits perfectly in my home. The best part? Their prices are unbeatable for the quality you get. I’m really happy with my living room set – it’s the perfect blend of comfort and style.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Yussuf T.</h6>
+            </div>
+
+            <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">Doob KZ furniture is fantastic! Solid build and stylish designs. Very happy with my purchase.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Sadraddin S.</h6>
+            </div>
+
+            <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">
+                The team at Doob KZ provided exceptional customer service. They helped me choose the right pieces for my home and guided me through the entire process. The delivery was quick, and the furniture arrived in perfect condition. Highly recommend!</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Erik H.</h6>
+            </div>
+
+            <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">
+                I love that Doob KZ offers eco-friendly options without compromising on style. Looks fantastic!</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Arailym K.</h6>
+            </div>
+
+            <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">I’m all about sustainability, so when I found out Doob KZ uses eco-friendly materials, I was sold! The furniture not only looks amazing, but I feel great knowing it’s environmentally conscious. Plus, the design is sleek and modern – I love it!
+              </p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Abzal A.</h6>
+            </div>
+          </div>
+        </div>
+        <!-- For large devices  -->
+        <div class="hidden lg:flex w-[80%] m-auto p-4 lg:flex justify-evenly">
+          <div class="box-1st">
+            <div class="w-60 h-60">
+              <h3 class="text-2xl font-bold">Happy Stories</h3>
+              <p class="text-sm">Creating Vibrant Vibes for Beautiful <br> Home!</p>
+              <img class="z-10 w-40" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/happy.jpg" alt="">
+            </div>
+            <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">Doob KZ has a fantastic selection of modern, chic furniture that fits perfectly in my home. The best part? Their prices are unbeatable for the quality you get. I’m really happy with my living room set – it’s the perfect blend of comfort and style.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Yussuf T.</h6>
+            </div>
+          </div>
+
+          <div class="box-2nd flex flex-col justify-between">
+            <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">Doob KZ furniture is fantastic! Solid build and stylish designs. Very happy with my purchase.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Sadraddin S.</h6>
+            </div>
+
+            <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20 ">
+              <p class="text-xs italic">
+                The team at Doob KZ provided exceptional customer service. They helped me choose the right pieces for my home and guided me through the entire process. The delivery was quick, and the furniture arrived in perfect condition. Highly recommend!</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Erik H.</h6>
+            </div>
+          </div>
+
+          <div class="box-3rd flex flex-col justify-between">
+            <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">
+                I love that Doob KZ offers eco-friendly options without compromising on style. Looks fantastic!</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Arailym K.</h6>
+            </div>
+
+            <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">I’m all about sustainability, so when I found out Doob KZ uses eco-friendly materials, I was sold! The furniture not only looks amazing, but I feel great knowing it’s environmentally conscious. Plus, the design is sleek and modern – I love it!
+              </p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Abzal A.</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location  -->
+      <section id="call">
+        <h4 class="text-center text-xl lg:text-3xl my-4 font-bold">How To Find Us</h4>
+        <div class="bg-green-600 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly py-14 my-8">
+          <div class="text-white flex justify-between lg:items-center py-2 lg:py-4  ml-6">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-map-location-dot"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Address</p>
+              <p class="text-xs lg:text-sm">Kazakhstan, Astana, Bekturova 3</p>
+            </div>
+          </div>
+
+          <div class="text-white flex justify-between lg:items-center py-4 ml-[13px]">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-2"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Phone</p>
+              <p class="text-xs lg:text-sm">+7 775 824 51 75 /
+                +1 (973) 417-6766</p>
+            </div>
+          </div>
+
+          <div class="text-white flex justify-between lg:items-center py-4">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Email</p>
+              <p class="text-xs lg:text-sm">dauletkhanzhambyl@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="m-auto flex justify-center items-center my-6">
+          <button onclick="openMap()" class=" relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-green-500 group-hover:from-cyan-500 group-hover:to-green-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+            <span class="flex items-center gap-x-2 relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>View On Google Map</p>
+            </span>
+          </button>
+        </div>
+        
+      </section>
+    </main>
+    
+    
+
+    <footer class="w-full px-12 py-10 bg-green-500 text-white">
+      <section class="w-full lg:m-auto flex flex-col lg:flex-row lg:justify-between ">
+        <p class="sm:text-center">Copyright © 2022 Doob.kz | Powered by <a class="text-yellow-300 hover:underline hover:text-yellow-600" href="#" target="_blank">...</a></p>
+        <div class="flex items-center justify-center lg:gap-x-7 lg:content-end lg:ml-96 mt-5 gap-x-4">
+          <a href="#" target="_blank" class="hover:text-green-500"><i class="fa-brands fa-github fa-xl"></i></span>
+          <a href="#" target="_blank" class="hover:text-green-400"><i class="fa-brands fa-linkedin-in fa-xl"></i></span>
+          <a href="#" target="_blank" class="hover:text-fuchsia-300"><i class="fa-brands fa-instagram fa-xl"></i></span>
+          <a href="#" target="_blank" class="hover:text-sky-400"><i class="fa-brands fa-twitter fa-xl"></i></span>
+        </div>
+      </section>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

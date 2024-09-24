@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doob.kz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/168ebc7feb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+
+    
+    <!-- Маленькие устройства -->
+<header
+class="h-[60vh] w-full bg-[url('img/interior-room-with-white-sofa-floor-lamp-front-light-green-background_825692-14983.jpg')] bg-no-repeat bg-cover md:hidden lg:hidden"
+>
+<!-- Навигационная панель -->
+<nav
+  class="bg-gradient-to-r from-green-700 to-transparent sticky py-4 px-6 flex justify-between items-center shadow-lg backdrop-blur-md z-50"
+>
+  <div>
+    <p class="font-Inter font-bold text-lg text-white ">doob.kz</p>
+    <!-- <p class="font-Ubuntu text-xs lg:text-sm font-normal text-slate-200 tracking-wide">
+      Мы заботимся о внутренней красоте вашего дома<br> 
+    </p> -->
+  </div>
+  <div>
+    <ul class="flex gap-6 text-white font-sans">
+      <li class="hover:text-slate-200 transition duration-300">
+        <a class="text-sm lg:text-base" href="#about">О нас</a>
+      </li>
+      <li class="hover:text-slate-200 transition duration-300">
+        <a class="text-sm lg:text-base" href="#service">Каталог</a>
+      </li>
+      <li class="hover:text-slate-200 transition duration-300">
+        <a class="text-sm lg:text-base" href="#review">Отзывы</a>
+      </li>
+      <!-- <li class="hover:text-slate-200 transition duration-300">
+        <a class="text-sm lg:text-base" href="#call">Контакты</a>
+      </li> -->
+    </ul>
+    
+  </div>
+  
+</nav>
+<div class="container">
+    <button id="languageToggle" class="button">
+      Switch to Russian
+    </button>
+  </div>
+
+
+<!-- Герой-секция -->
+
+<div id="top" class="absolute top-36 lg:top-[30rem] left-16 lg:left-[29em] z-10">
+    
+  <div class="flex flex-col">
+    <p class="text-3xl lg:text-6xl text-white font-bold leading-tight">
+      Лучшая жизнь начинается с <br />
+      красивой мебели
+    </p>
+  </div>
+  <div class="mt-12">
+    <a
+      href="#call"
+      class="text-white bg-green-600 hover:bg-green-500 px-8 py-3 inline-block text-sm font-medium tracking-wide focus:ring-4 focus:ring-green-300 transition"
+    >
+    <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>
+      Контакт
+    </a>
+  </div>
+  
+</div>
+</header>
+
+
+
+<!-- Для больших устройств -->
+<header
+class="hidden md:block lg:block h-[130vh] w-full bg-[url('img/interior-room-with-white-sofa-floor-lamp-front-light-green-background_825692-14983.jpg')] bg-no-repeat bg-cover"
+>
+<!-- Навигационная панель -->
+<nav
+class="bg-gradient-to-r from-green-700 to-transparent fixed top-0 py-4 w-full px-16 flex justify-between items-center shadow-lg backdrop-blur-md z-50"
+>
+<a href="#">
+    <div>
+        <p class="font-Inter font-bold text-2xl text-white">doob.kz</p>
+        <p class="font-Ubuntu text-xs font-normal text-slate-200">
+            Мы заботимся о красоте<br> вашего дома
+        </p>
+    </div>
+</a>
+<div class="flex items-center">
+    <ul class="flex text-white font-sans gap-8">
+        <li class="hover:text-slate-200 transition duration-300">
+            <a class="text-base" href="#about">О нас</a>
+        </li>
+        <li class="hover:text-slate-200 transition duration-300">
+            <a class="text-base" href="#services">Каталог</a>
+        </li>
+        <li class="hover:text-slate-200 transition duration-300">
+            <a class="text-base" href="#reviews">Отзывы</a>
+        </li>
+    </ul>
+    <button
+    type="button"
+    class="ml-8 text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-6 py-3 transition duration-300"
+    >
+    <a class="fa fa-whatsapp mr-3" aria-hidden="true"  href="#call"> Контакт</a>
+</button>
+</div>
+
+</nav>
+<button id="languageTogglle" class="fixed bottom-20 right-4 bg-green-300 text-white px-4 py-2 rounded text-lg hover:bg-green-700 transition z-50">
+    Switch to Russian
+  </button>
+
+
+<!-- Герой секция -->
+<div id="home" class="relative h-full flex items-center justify-center bg-gradient-to-t from-black via-transparent to-transparent">
+<div class="text-center z-10 max-w-3xl">
+  <!-- Заголовок -->
+  <p class="text-4xl lg:text-6xl font-extrabold text-white mb-8 leading-tight tracking-tight">
+    Лучшая жизнь начинается с<br />
+      красивой мебели
+  </p>
+  
+  <!-- Кнопка действия -->
+  <a
+    href="#contact"
+    class="inline-flex items-center justify-center text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:from-green-600 hover:via-green-700 hover:to-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-semibold rounded-lg text-lg px-8 py-4 transition-transform transform hover:scale-105 duration-300"
+  >
+    <svg class="w-9 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+    </svg>
+    Заказать
+  </a>
+</div>
+</div>
+
+</header>
+
+    <main>
+        <div id="about" class="about-section my-6 mx-4 lg:my-10 lg:mx-24">
+            <div>
+              <!-- Левая секция  -->
+              <div class="lg:w-[45%]">
+      <h1 class="text-3xl lg:text-5xl font-Ubuntu font-serif mb-4 lg:mb-6 text-gray-800">
+        Добро пожаловать в Doob.kz<br /> Ваше место для качественной мебели
+      </h1>
+      <p class="text-base lg:text-lg text-gray-600">
+        В Doob.kz мы стремимся преобразить ваши жилые помещения стильной, комфортной и долговечной мебелью. Независимо от того, ищете ли вы современные минималистичные дизайны или вечную классику, у нас есть широкий выбор мебели для любого вкуса и потребности. От уютных диванов и элегантных обеденных наборов до функциональной офисной мебели и решений для хранения — Doob.kz предлагает премиальную мебель, сочетающую эстетическую привлекательность и практичность.
+      </p>
+    </div>
+    
+    <div class="lg:flex lg:justify-between lg:space-x-12">
+      <div class="lg:w-[40%] lg:my-12 space-y-8 px-5">
+        <div class="flex items-start space-x-4">
+          <div class="text-[#22c55e] text-2xl">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <div>
+            <h5 class="text-lg lg:text-xl font-semibold text-gray-800">Удобный мебельный магазин рядом с вами</h5>
+            <p class="text-sm lg:text-base text-gray-600">Мы стремимся улучшить красоту вашего дома. Посетите наш магазин и выберите мебель, которая преобразит ваше пространство.</p>
+          </div>
+        </div>
+    
+        <div class="flex items-start space-x-4">
+          <div class="text-[#22c55e] text-2xl">
+            <i class="fa-solid fa-chair"></i>
+          </div>
+          <div>
+            <h5 class="text-lg lg:text-xl font-semibold text-gray-800">Современные Дизайны</h5>
+            <p class="text-sm lg:text-base text-gray-600">Испытайте современную мебель, созданную из лучших материалов. Мы предлагаем стильные и удобные изделия для всех ваших потребностей в домашнем декоре.</p>
+          </div>
+        </div>
+    
+        <div class="flex items-center text-[#22c55e] cursor-pointer text-sm space-x-2">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="#" class="font-semibold">Посмотреть на Google Карте</a>
+        </div>
+      </div>
+    
+      <!-- Правая секция -->
+      <div class="hidden lg:flex lg:w-[50%] lg:items-end lg:justify-end relative space-x-4">
+        <img class="lg:relative w-44 lg:w-56 lg:left-52 lg:bottom-24 lg:z-30" src="img/81UxiD1Mm9L.jpg" alt="HappySmile">
+        <img class="lg:w-52 h-32 lg:relative lg:bottom-7" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/dotsx2.png" alt="HappySmile">
+        <img class="relative lg:top-5 lg:right-24 w-36 lg:w-52 lg:z-20" src="img/dining-sets-19145.avif" alt="HappySmile">
+      </div>
+    
+      <div class="w-3/4 m-auto lg:hidden p-4">
+        <img class="my-8" src="img/RCH001_7_Supersize.avif" alt="HappySmile">
+        
+      </div>
+    </div>
+    
+    <div class="flex flex-col justify-center items-center my-12 px-4 lg:px-8">
+      <h2 class="text-3xl lg:text-5xl font-extrabold text-center text-gray-900 mb-8">
+        Наше производственное предприятие
+      </h2>
+      <div class="relative w-full lg:w-[80%] aspect-w-16 aspect-h-9 h-[250px] lg:h-[400px]">
+        <iframe 
+          class="w-full h-full rounded-xl shadow-xl"
+          src="https://www.youtube.com/embed/3A_ciKe0o5A?autoplay=1&mute=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          title="Наше производственное предприятие">
+        </iframe>
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-20 rounded-xl"></div>
+      </div>
+    </div>
+              <!-- О Руководителе -->
+              <div class="lg:flex lg:justify-between">
+                <div class="hidden lg:flex my-10 w-1/2">
+                  <img class="z-30 w-70 h-60" src="img/IMG_1109.jpg" alt="HappySmile">
+                  <img class="w-44 h-40 relative right-10" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/dotsx2.png" alt="HappySmile">
+                  <img class="z-20 relative right-60 top-44 w-50 h-60" src="img/IMG_7527.PNG" alt="HappySmile">
+                </div>
+    
+                <div class="flex flex-col justify-start lg:w-[40%] lg:my-12 gap-y-6 px-4">
+                  <h3 class="text-2xl font-bold">Стремление к совершенству интерьера</h3>
+                  <h3 class="hidden text-4xl font-bold">Приверженность к стоматологическому<br> совершенству</h3>
+                  <h4 class="text-xl font-semibold text-slate-700">Мы создаем красивую и яркую мебель</h4>
+                  <p class="w-[90%] text-slate-600 text-sm font-medium"> Наша миссия проста: предложить высококачественную, доступную мебель, которая улучшит красоту и функциональность вашего дома или офиса. В Doob.kz мы верим, что хороший дизайн должен быть доступен каждому, и стремимся предоставить вам лучшее в мастерстве и стиле. Исследуйте нашу коллекцию сегодня и найдите идеальные элементы для вашего пространства.</p>
+                  <div class="my-8">
+                    <h5 class="text-lg font-semibold">Мистер Абшукур Аманбек</h5>
+                    <p class="text-sm text-slate-600 italic w-[90%]">Мистер Аманбек участвует во всех аспектах компании — от выбора материалов до контроля за производством и обеспечением высокого уровня обслуживания клиентов. Его приверженность инновациям и удовлетворению потребностей клиентов делает его прогрессивным лидером в мебельной отрасли, который постоянно адаптируется к тенденциям и требованиям рынка.</p>
+                  </div>
+                </div>
+                <div class="m-auto w-52 lg:hidden">
+                  <img src="img/IMG_7527.PNG" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+     <!-- Секция Контактов -->
+<section id="contact">
+    <div class="w-full lg:w-[85%] bg-gradient-to-r from-green-500 to-green-700 lg:flex lg:justify-between lg:mt-10 py-12">
+      <div class="lg:ml-24 py-10 lg:py-20 w-full lg:w-[50%] flex flex-col lg:items-start items-center place-content-start">
+        <h3 class="text-3xl lg:text-3xl font-serif text-white font-bold">Новый клиент</h3>
+        <p class="text-lg lg:text-xl font-semibold w-[70%] my-4 text-slate-200">Вы новый клиент? Не переживайте, мы поможем вам сделать выбор. Заполните форму рядом или просто позвоните нам.</p>
+        <p class="text-xl lg:text-2xl text-white font-bold mt-4 lg:mt-10">НУЖНА ПОМОЩЬ?</p>
+        <p class="text-sm lg:text-xl text-white font-semibold cursor-pointer hover:underline my-4">+7 775 824 51 75</p>
+      </div>
+      <div class="lg:w-[50%] px-2 lg:py-20 lg:z-30">
+        <div class="px-2 py-8 flex flex-col lg:w-1/2 justify-center items-center bg-white rounded-xl shadow-2xl lg:relative lg:left-[26rem]">
+          <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" placeholder="Ваше имя">
+          <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="email" placeholder="Ваш Email">
+          <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" placeholder="Ваш номер телефона">
+          <button class="py-2 px-6 border border-green-500 rounded-md text-sm text-green-500 font-semibold my-3 hover:bg-green-500 hover:text-white hover:border-none">Отправить</button>
+        </div>
+      </div>
+      
+      <img class="hidden lg:block absolute right-12" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/dotsx2.png" alt="">
+    </div>
+  </section>
+  
+      <!-- Раздел Особенностей -->
+<section class="bg-green-100 py-12 px-24">
+    <h2 class="text-2xl lg:text-4xl font-bold text-center my-2 lg:my-3">
+      Мы гордимся тем, что предлагаем не просто мебель — мы создаём полноценный опыт.
+    </h2>
+    <h4 class="text-lg lg:text-xl font-semibold text-center my-2 lg:my-3">
+      Вдохновение для вашего дома
+    </h4>
+    <!-- Карты Особенностей -->
+    <div class="flex flex-col md:flex-row lg:flex-row justify-center gap-y-6 lg:gap-x-10 my-14">
+      <div>
+        <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+          <span class="text-green-600">
+            <i class="fa-solid fa-star fa-2xl lg:fa-3x"></i>
+          </span>
+          <h6 class="text-base lg:text-lg font-semibold text-center my-3">
+            Исключительное качество работы​
+          </h6>
+          <p class="text-sm lg:text-base text-center">
+            Наша мебель отличается мастерством и высококачественными материалами, обеспечивая стиль и долговечность.
+          </p>
+        </div>
+      </div>
+  
+      <div>
+        <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+          <span class="text-green-600">
+            <i class="fa-solid fa-cog fa-2xl lg:fa-3x"></i>
+          </span>
+          <h6 class="text-base lg:text-lg font-semibold text-center my-3">
+            Индивидуальные дизайны
+          </h6>
+          <p class="text-sm lg:text-base text-center">
+            Настройте каждый элемент в соответствии с вашим стилем благодаря широкому выбору вариантов.
+          </p>
+        </div>
+      </div>
+  
+      <div>
+        <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+          <span class="text-green-600">
+            <i class="fa-solid fa-leaf fa-2xl lg:fa-3x"></i>
+          </span>
+          <h6 class="text-base lg:text-lg font-semibold text-center my-3">
+            Экологичные практики
+          </h6>
+          <p class="text-sm lg:text-base text-center">
+            Наслаждайтесь мебелью, созданной из экологически чистых материалов и с использованием устойчивых методов.
+          </p>
+        </div>
+      </div>
+  
+      <div>
+        <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+          <span class="text-green-600">
+            <i class="fa-solid fa-users fa-2xl lg:fa-3x"></i>
+          </span>
+          <h6 class="text-base lg:text-lg font-semibold text-center my-3">
+            Превосходное обслуживание клиентов
+          </h6>
+          <p class="text-sm lg:text-base text-center">
+            Получите беспрерывную поддержку от разработки до доставки с нашей преданной командой.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Ряд изображений -->
+<!-- Для небольших устройств -->
+<section id="service" class="mx-4 pt-8 flex flex-col justify-center items-center m-auto  lg:hidden">
+
+    <div class="flex flex-col px-4 my-3">
+      <h2 class="text-xl font-bold my-1">Различные каталоги, которые мы предлагаем</h2>
+      <p class="text-slate-500 font-semibold">
+        У нас есть всё, что вам нужно для преображения интерьера вашего дома: от потрясающей мебели и стильного декора до индивидуальных решений и сезонных предложений.
+      </p>
+    </div>
+
+    <div class="flex m-auto">
+      <div class="relative h-[15rem] bg-[url('img/A-collection-of-vintage-books-thoughtfully-arranged-on-the-side-tables-bestows-upon-the-modern-living-room-a-touch-of-bygone-British-charm.jpg')] bg-no-repeat bg-cover">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-lg font-semibold">1.</p>
+          <p class="text-base font-semibold">Каталог мебельных коллекций</p>
+          <p class="text-slate-100 my-4 text-xs">Современное пространство с нейтральными тонами и акцентными элементами.</p>
+        </div>
+      </div>
+
+      <div class="relative h-[15rem] bg-[url('img/ghk070123homeminifeature-007-660d85545cc73.avif')] bg-no-repeat bg-cover">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-lg font-semibold">2.</p>
+          <p class="text-base font-semibold">Каталог товаров для декора дома</p>
+          <p class="text-slate-100 my-4 text-xs">Красиво оформленный обеденный стол с декоративными элементами.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex m-auto">
+      <div class="relative h-[15rem] bg-[url('img/Cozy-Christmas-Decorating-Ideas-21.jpg')] bg-no-repeat bg-cover">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-base font-semibold">3.</p>
+          <p class="text-base font-semibold">Сезонный каталог для дома</p>
+          <p class="text-slate-100 my-4 text-xs">Уютное пространство, оформленное для зимы с пледами и праздничными огнями.</p>
+        </div>
+      </div>
+
+      <div class="relative h-[15rem] bg-[url('img/aace7ce7-7eba-408b-a0ef-8327c52cee03.avif')] bg-no-repeat bg-cover">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-lg font-semibold">4.</p>
+          <p class="text-base font-semibold">Каталог индивидуальных дизайнов</p>
+          <p class="text-slate-100 my-4 text-xs">Рабочий стол дизайнера с образцами тканей и материалов.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex m-auto">
+      <div class="relative h-[15rem] bg-[url('img/v2-dqhw3-3uj9o.jpg')] bg-no-repeat bg-cover">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-lg font-semibold">5.</p>
+          <p class="text-base font-semibold">Каталог новых поступлений</p>
+          <p class="text-slate-100 my-4 text-xs">Витрина с последними продуктами в современном стиле.</p>
+        </div>
+      </div>
+
+      <div class="relative h-[15rem] bg-[url('img/AD_5.17_16-Best-Memorial-Day-Furniture-Sales-and-Home-Deals.webp')] bg-no-repeat bg-cover">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-lg font-semibold">6.</p>
+          <p class="text-base font-semibold">Каталог специальных предложений</p>
+          <p class="text-slate-100 my-4 text-xs">Яркая витрина с распродажами и скидочными товарами.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex m-auto">
+      <div class="relative h-[15rem] bg-[url('img/DALL_E_2024-02-08_14.46.55_-_A_luxurious_living_room_scene_blending_modern_and_classic_furniture_styles._The_centerpiece_is_a_statement_sofa_with_a_unique_eye-catching_design_po.webp')] bg-no-repeat bg-cover">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-lg font-semibold">7.</p>
+          <p class="text-base font-semibold">Каталог роскошной мебели</p>
+          <p class="text-slate-100 my-4 text-xs">Сложный интерьер с акцентом на роскошную мебель и декор.</p>
+        </div>
+      </div>
+
+      <div class="h-[15rem] bg-[url('img/choose-high-quality-sustainable-materials_600x600.webp')] bg-no-repeat bg-cover relative">
+        <!-- Наложение для улучшения читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-48 z-10">
+          <p class="text-lg font-semibold">8.</p>
+          <p class="text-base font-semibold">Каталог экологически чистых опций​</p>
+          <p class="text-slate-100 my-4 text-xs">Пространство с изделиями из переработанных или экологически чистых материалов, с элементами природы и естественного света.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 py-8 bg-green-500 w-full flex flex-col justify-center my-6">
+      <p class="text-slate-100 text-sm font-bold">
+        ЕСЛИ ВАМ НУЖНА ПОМОЩЬ
+      </p>
+      <h2 class="text-lg font-bold text-white">Звоните: +7 775 824 51 75 / +1 (973) 417-6766</h2>
+    </div>
+
+</section>
+
+     <!-- Для больших экранов -->
+<section id="services" class="hidden lg:flex py-12 px-24 lg:flex flex-col justify-center items-center w-[80%] m-auto">
+    <!-- Первый ряд изображений -->
+    <div class="flex m-auto">
+      <div class="w-[50%] flex flex-col px-8 content-end">
+        <h2 class="text-3xl font-bold my-4 ">Каталоги, которые мы предлагаем</h2>
+        <p class="text-slate-500 text-lg font-bold">
+          У нас есть все необходимое для преобразования интерьера вашего дома: от потрясающей мебели и стильного декора до индивидуальных решений и сезонных новинок.
+        </p>
+      </div>
+  
+      <div class="w-1/2 flex">
+        <div class="relative h-[17rem] bg-[url('img/A-collection-of-vintage-books-thoughtfully-arranged-on-the-side-tables-bestows-upon-the-modern-living-room-a-touch-of-bygone-British-charm.jpg')] bg-no-repeat bg-cover">
+          <!-- Наложение для цвета фона и читабельности текста -->
+          <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div class="relative text-white px-3 py-6 w-60 z-10">
+            <p class="text-lg font-semibold">1.</p>
+            <p class="text-base font-semibold">Каталог мебельных коллекций</p>
+            <p class="text-slate-100 my-4 text-xs">Современная, элегантно оформленная жилая зона с нейтральными оттенками и акцентными элементами.</p>
+          </div>
+        </div>
+        <div class="relative h-[17rem] bg-[url('img/ghk070123homeminifeature-007-660d85545cc73.avif')] bg-no-repeat bg-cover">
+          <!-- Наложение для цвета фона и читабельности текста -->
+          <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div class="relative text-white px-3 py-6 w-60 z-10">
+            <p class="text-lg font-semibold">2.</p>
+            <p class="text-base font-semibold">Каталог предметов декора</p>
+            <p class="text-slate-100 my-4 text-xs">Крупный план красиво оформленного обеденного стола с декоративными салфетками, свечами и центральным украшением.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Второй ряд изображений -->
+    <div class="flex">
+      <div class="relative h-[17rem] bg-[url('img/Cozy-Christmas-Decorating-Ideas-21.jpg')] bg-no-repeat bg-cover">
+        <!-- Наложение для цвета фона и читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-60 z-10">
+          <p class="text-base font-semibold">3.</p>
+          <p class="text-base font-semibold">Каталог сезонных предложений</p>
+          <p class="text-slate-100 my-4 text-xs">Теплая, уютная комната, украшенная для зимы с пледами, праздничными огнями и сезонными акцентами.</p>
+        </div>
+      </div>
+      <div class="relative h-[17rem] bg-[url('img/aace7ce7-7eba-408b-a0ef-8327c52cee03.avif')] bg-no-repeat bg-cover">
+        <!-- Наложение для цвета фона и читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-60 z-10">
+          <p class="text-lg font-semibold">4.</p>
+          <p class="text-base font-semibold">Каталог индивидуальных дизайнов</p>
+          <p class="text-slate-100 my-4 text-xs">Рабочий стол дизайнера с выбором тканей и материалов рядом с незаконченной мебелью.</p>
+        </div>
+      </div>
+      <div class="relative h-[17rem] bg-[url('img/v2-dqhw3-3uj9o.jpg')] bg-no-repeat bg-cover">
+        <!-- Наложение для цвета фона и читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-60 z-10">
+          <p class="text-lg font-semibold">5.</p>
+          <p class="text-base font-semibold">Каталог новинок</p>
+          <p class="text-slate-100 my-4 text-xs">Привлекательная витрина с новейшими продуктами, оформленная в современном стиле.</p>
+        </div>
+      </div>
+      <div class="relative h-[17rem] bg-[url('img/AD_5.17_16-Best-Memorial-Day-Furniture-Sales-and-Home-Deals.webp')] bg-no-repeat bg-cover">
+        <!-- Наложение для цвета фона и читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-60 z-10">
+          <p class="text-lg font-semibold">6.</p>
+          <p class="text-base font-semibold">Каталог распродаж</p>
+          <p class="text-slate-100 my-4 text-xs">Яркая витрина магазина с табличками "РАСПРОДАЖА" и выделенными уцененными товарами.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Третий ряд изображений -->
+    <div class="flex m-auto px-7">
+      <div class="flex">
+        <div class="relative h-[17rem] bg-[url('img/DALL_E_2024-02-08_14.46.55_-_A_luxurious_living_room_scene_blending_modern_and_classic_furniture_styles._The_centerpiece_is_a_statement_sofa_with_a_unique_eye-catching_design_po.webp')] bg-no-repeat bg-cover">
+          <!-- Наложение для цвета фона и читабельности текста -->
+          <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div class="relative text-white px-3 py-6 w-60 z-10">
+            <p class="text-lg font-semibold">7.</p>
+            <p class="text-base font-semibold">Каталог роскошной коллекции</p>
+            <p class="text-slate-100 my-4 text-xs">Элегантный интерьер с акцентом на роскошную мебель и декор.</p>
+          </div>
+        </div>
+      </div>
+      <div class="h-[17rem] bg-[url('img/choose-high-quality-sustainable-materials_600x600.webp')] bg-no-repeat bg-cover relative">
+        <!-- Наложение для цвета фона и читабельности текста -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative text-white px-3 py-6 w-60 z-10">
+          <p class="text-lg font-semibold">8.</p>
+          <p class="text-base font-semibold">Каталог экологичных решений</p>
+          <p class="text-slate-100 my-4 text-xs">Пространство, вдохновленное природой, с предметами из переработанных или устойчиво произведенных материалов, возможно с растениями и естественным светом.</p>
+        </div>
+      </div>
+  
+      <div class="w-[30rem] px-14 bg-green-800 flex flex-col justify-center rounded-br-full">
+        <p class="text-slate-100 text-sm font-bold">
+          ПО ВСЕМ ВОПРОСАМ
+        </p>
+        <h2 class="text-lg font-bold text-white">Звоните: +7 775 824 51 75 / +1 (973) 417-6766</h2>
+      </div>
+    </div>
+  </section>
+  
+   <!-- Раздел с отзывами -->
+<!-- Для маленьких устройств -->
+<section id="review" class="w-full my-10 lg:hidden">
+    <h3 class="text-lg lg:text-3xl font-bold text-center py-2">Вам может понравиться</h3>
+    <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4 ">
+      <img class="max-w-[45%] lg:w-full" src="img/sofa.jpg" alt="">
+      <img class="max-w-[45%] lg:w-full" src="img/diningTableSeet.webp" alt="">
+    </div>
+    <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-2 gap-x-4">
+      <img class="max-w-[45%] lg:w-full" src="img/ergonomic.jpg" alt="">
+      <img class="max-w-[45%] lg:w-full" src="img/bed.jpg" alt="">
+    </div>
+    <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">Чтобы увидеть больше товаров, посетите нашу страницу в Инстаграм 👉  <a class="underline hover:text-green-900" href="https://www.instagram.com/doob.kz/?hl=ru" target="_blank">Doob.kz Мебель</a></p>
+  </section>
+  
+  <!-- Для больших устройств -->
+  <section id="reviews" class="w-full my-10 hidden lg:block">
+    <h3 class="text-3xl font-bold text-center py-2">Вам может понравиться</h3>
+    <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4">
+      <!-- Продукт 1 -->
+      <div class="max-w-[45%] lg:w-full text-center">
+        <img class="w-full" src="img/sofa.jpg" alt="Продукт 1">
+        <p class="mt-2 font-semibold">Стильный диван</p>
+        <p class="text-sm text-gray-600">Комфортный и современный дизайн.</p>
+      </div>
+  
+      <!-- Продукт 2 -->
+      <div class="max-w-[45%] lg:w-full text-center">
+        <img class="w-full" src="img/diningTableSeet.webp" alt="Продукт 2">
+        <p class="mt-2 font-semibold">Набор для обеденного стола</p>
+        <p class="text-sm text-gray-600">Идеально для семейных обедов.</p>
+      </div>
+  
+      <!-- Продукт 3 -->
+      <div class="max-w-[45%] lg:w-full text-center">
+        <img class="w-full" src="img/ergonomic.jpg" alt="Продукт 3">
+        <p class="mt-2 font-semibold">Эргономичное кресло</p>
+        <p class="text-sm text-gray-600">Идеально для домашнего офиса.</p>
+      </div>
+  
+      <!-- Продукт 4 -->
+      <div class="max-w-[45%] lg:w-full text-center">
+        <img class="w-full" src="img/bed.jpg" alt="Продукт 4">
+        <p class="mt-2 font-semibold">Роскошная кровать</p>
+        <p class="text-sm text-gray-600">Элегантное дополнение для вашей спальни.</p>
+      </div>
+    </div>
+  
+    <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">
+      Чтобы увидеть больше товаров, посетите нашу страницу в Инстаграм 👉 
+      <a class="underline hover:text-green-900" href="https://www.instagram.com/doob.kz/?hl=ru" target="_blank">Doob.kz Мебель</a>
+    </p>
+  </section>
+  
+      
+
+     <!-- Раздел с отзывами -->
+<section class="bg-white py-8">
+    <!-- Блоки отзывов -->
+    <!-- Для маленьких устройств -->
+    <div class="w-[80%] m-auto p-4 lg:hidden lg:justify-evenly">
+      <div class="w-60 h-60">
+        <h3 class="text-2xl font-bold text-center my-3">Счастливые истории</h3>
+        <p class="text-sm text-center my-3">Создаем яркую атмосферу для прекрасного дома!</p>
+        <img class="w-40 m-auto" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/happy.jpg" alt="">
+      </div>
+  
+      <div class="flex flex-col gap-y-4">
+        <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+          <p class="text-xs italic">У Doob KZ отличный выбор современной и стильной мебели, которая идеально вписывается в мой дом. Лучшее – это их цены, которые непревзойденны за такое качество. Я очень доволен своим комплектом для гостиной – это идеальное сочетание комфорта и стиля.</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Юссуф Т.</h6>
+        </div>
+  
+        <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+          <p class="text-xs italic">Мебель Doob KZ потрясающая! Надежное качество и стильный дизайн. Очень доволен покупкой.</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Садраддин С.</h6>
+        </div>
+  
+        <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+          <p class="text-xs italic">
+            Команда Doob KZ предоставила исключительный сервис. Они помогли мне выбрать подходящую мебель для дома и провели через весь процесс. Доставка была быстрой, и мебель пришла в идеальном состоянии. Очень рекомендую!</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Эрик Х.</h6>
+        </div>
+  
+        <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+          <p class="text-xs italic">
+            Мне нравится, что Doob KZ предлагает экологичные варианты без ущерба для стиля. Выглядит фантастически!</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Арайлым К.</h6>
+        </div>
+  
+        <div class="bg-green-50 w-72 px-4 py-9 shadow-xl">
+          <p class="text-xs italic">Я за устойчивое развитие, и когда узнал, что Doob KZ использует экологичные материалы, я был поражен! Мебель не только выглядит великолепно, но и приятно осознавать, что она экологична. А дизайн стильный и современный – я в восторге!</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Абзал А.</h6>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Для больших устройств -->
+    <div class="hidden lg:flex w-[80%] m-auto p-4 lg:flex justify-evenly">
+      <div class="box-1st">
+        <div class="w-60 h-60">
+          <h3 class="text-2xl font-bold">Счастливые истории</h3>
+          <p class="text-sm">Создаем яркую атмосферу для прекрасного <br> дома!</p>
+          <img class="z-10 w-40" src="https://raw.githubusercontent.com/farazc60/Project-Images/main/dental/Images/happy.jpg" alt="">
+        </div>
+        <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+          <p class="text-xs italic">У Doob KZ отличный выбор современной и стильной мебели, которая идеально вписывается в мой дом. Лучшее – это их цены, которые непревзойденны за такое качество. Я очень доволен своим комплектом для гостиной – это идеальное сочетание комфорта и стиля.</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Юссуф Т.</h6>
+        </div>
+      </div>
+  
+      <div class="box-2nd flex flex-col justify-between">
+        <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+          <p class="text-xs italic">Мебель Doob KZ потрясающая! Надежное качество и стильный дизайн. Очень доволен покупкой.</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Садраддин С.</h6>
+        </div>
+  
+        <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20 ">
+          <p class="text-xs italic">
+            Команда Doob KZ предоставила исключительный сервис. Они помогли мне выбрать подходящую мебель для дома и провели через весь процесс. Доставка была быстрой, и мебель пришла в идеальном состоянии. Очень рекомендую!</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Эрик Х.</h6>
+        </div>
+      </div>
+  
+      <div class="box-3rd flex flex-col justify-between">
+        <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+          <p class="text-xs italic">
+            Мне нравится, что Doob KZ предлагает экологичные варианты без ущерба для стиля. Выглядит фантастически!</p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Арайлым К.</h6>
+        </div>
+  
+        <div class="bg-green-50 w-72 px-4 py-12 shadow-xl z-20">
+          <p class="text-xs italic">Я за устойчивое развитие, и когда узнал, что Doob KZ использует экологичные материалы, я был поражен! Мебель не только выглядит великолепно, но и приятно осознавать, что она экологична. А дизайн стильный и современный – я в восторге!
+          </p>
+          <h6 class="text-sm font-semibold mt-5 mb-2">Абзал А.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+     <!-- Локация -->
+<section id="call">
+    <h4 class="text-center text-xl lg:text-3xl my-4 font-bold">Как нас найти</h4>
+    <div class="bg-green-600 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly py-14 my-8">
+      <div class="text-white flex justify-between lg:items-center py-2 lg:py-4 ml-6">
+        <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-map-location-dot"></i></span>
+        <div>
+          <p class="text-base lg:text-xl">Адрес</p>
+          <p class="text-xs lg:text-sm">Казахстан, Астана, Бектурова 3</p>
+        </div>
+      </div>
+  
+      <div class="text-white flex justify-between lg:items-center py-4 ml-[13px]">
+        <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-2"><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <div>
+          <p class="text-base lg:text-xl">Телефон</p>
+          <p class="text-xs lg:text-sm">+7 775 824 51 75 /
+            +1 (973) 417-6766</p>
+        </div>
+      </div>
+  
+      <div class="text-white flex justify-between lg:items-center py-4">
+        <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-envelope"></i></span>
+        <div>
+          <p class="text-base lg:text-xl">Email</p>
+          <p class="text-xs lg:text-sm">dauletkhanzhambyl@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="m-auto flex justify-center items-center my-6">
+      <button onclick="openMap()" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-green-500 group-hover:from-cyan-500 group-hover:to-green-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+        <span class="flex items-center gap-x-2 relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <p>Посмотреть на Google карте</p>
+        </span>
+      </button>
+    </div>
+  </section>
+  
+    </main>
+    
+    
+
+    <footer class="w-full px-12 py-10 bg-green-500 text-white">
+        <section class="w-full lg:m-auto flex flex-col lg:flex-row lg:justify-between ">
+          <p class="sm:text-center">Авторское право © 2022 Doob.kz | Разработано <a class="text-yellow-300 hover:underline hover:text-yellow-600" href="#" target="_blank">...</a></p>
+          <div class="flex items-center justify-center lg:gap-x-7 lg:content-end lg:ml-96 mt-5 gap-x-4">
+            <a href="#" target="_blank" class="hover:text-green-500"><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href="#" target="_blank" class="hover:text-green-400"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+            <a href="#" target="_blank" class="hover:text-fuchsia-300"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="#" target="_blank" class="hover:text-sky-400"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          </div>
+        </section>
+      </footer>
+      
+    
+    <script src="script.js"></script>
+  </body>
+</html>
